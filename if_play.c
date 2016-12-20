@@ -10,7 +10,5 @@ int main(){
 	if (num%3==0){
 		printf("Pogi");
 	}
-			
- 		
 }
 	
