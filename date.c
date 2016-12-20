@@ -42,7 +42,7 @@ int main(){
  		if (a==12){
 			printf("December ");
  		}
- 		else {
+ 		else if (a>12){
  			printf("We only have 12 months ");
 		 }
  		if (b==1){
@@ -66,7 +66,7 @@ int main(){
 		if (b==7){
  			printf("Saturday");
 		}
-		else {
+		else if (b>7){
  			printf("We only have 7 days");
 		 }
 }
