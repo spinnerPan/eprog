@@ -7,6 +7,6 @@ int main(){
 		a=b%2;
 	if(a!= 0)
 		printf("\n %d",b);
-}
-return 0;
+		}
+	return 0;
 }
