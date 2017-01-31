@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main(){
-	int i,sum,ave,grades[3];
+	int i,sum,grades[3];
+	float ave;
 	for(i=0 ;i<3; i++){
 		printf("Enter your grade:");
 		scanf("%d",&grades[i]);
@@ -9,9 +10,9 @@ int main(){
 		sum += grades[i];
 	}
 	ave=sum/3;
-	printf("the average is %d\n", ave);
+	printf("The average is %.2f\n", ave);
 	if(ave>=75)
-		printf("You passed");
-		else
-			printf("You failed");
+		printf("Pass");
+	else
+		printf("Fail");
 }
