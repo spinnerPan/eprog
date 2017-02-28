@@ -40,6 +40,7 @@ void readFromFile(){
 	myFile = fopen("sample.txt", "r");
     if(myFile == NULL){
     	printf("Error: File does not exist");
+    	exit(1);
     	
 	}
 	char temp[128];
@@ -56,6 +57,7 @@ void readpassedFromFile(){
 	myFile = fopen("sample.txt", "r");
     if(myFile == NULL){
     	printf("Error: File does not exist");
+    	exit(1);
 	}
 	char temp[128];
 	while (fgets(temp, sizeof temp, myFile) != NULL) {
@@ -72,6 +74,7 @@ void readfailedFromFile(){
 	myFile = fopen("sample.txt", "r");
     if(myFile == NULL){
     	printf("Error: File does not exist");
+    	exit(1);
 	}
 	char temp[128];
 	while (fgets(temp, sizeof temp, myFile) != NULL) {
@@ -88,6 +91,7 @@ void readinvalidFromFile(){
 	myFile = fopen("sample.txt", "r");
     if(myFile == NULL){
     	printf("Error: File does not exist");
+    	exit(1);
 	}
 	char temp[128];
 	while (fgets(temp, sizeof temp, myFile) != NULL) {
@@ -106,6 +110,7 @@ int main (){
     while(choice != 0){
     	switch(choice){
     		case 0: 
+    			exit(1);
     			break;
     		case 1: 
     			writeToFile();
